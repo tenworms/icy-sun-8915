@@ -1,0 +1,8 @@
+<h1>Departments index page</h1>
+
+
+<% @departments.each do |department| %>
+  <p><%= "Department: #{department.name} " %> </p>
+  <p><%="Floor: #{department.floor}"  %> </p>
+  <p><%="Employee: #{department.employees.flat_map{|employee|employee.name}}" %> </p>
+<% end  %>

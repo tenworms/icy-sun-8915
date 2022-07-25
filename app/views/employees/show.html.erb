@@ -1,0 +1,7 @@
+<h1>Employee Show page </h1>
+
+<% @employees.each do |employee| %>
+  <p><%= "Name: #{employee.name}"  %> </p>
+  <p><%= "Department: #{employee.department.name}"  %> </p>
+  
+<% end  %>
